@@ -44,3 +44,16 @@ let num2=200;
 let big= num1>num2? num1: num2; 
 console.log("Big number is: "+big);
 console.log("Type of big: ", typeof big);
+
+// Condition
+
+let number=80; 
+
+if(number>80){
+    console.log("Pro");
+}else if(number> 70 && number <=80){
+    console.log("Good"); 
+}
+else{
+    console.log("Bad");
+}
