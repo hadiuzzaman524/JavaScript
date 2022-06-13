@@ -46,9 +46,7 @@ console.log("Big number is: "+big);
 console.log("Type of big: ", typeof big);
 
 // Condition
-
 let number=80; 
-
 if(number>80){
     console.log("Pro");
 }else if(number> 70 && number <=80){
@@ -56,4 +54,20 @@ if(number>80){
 }
 else{
     console.log("Bad");
+}
+
+// Switch case
+
+let xx=24;
+
+switch(xx){
+
+    case 20: 
+    console.log("Tweenty"); 
+    break; 
+    case 10: 
+    console.log("Ten"); 
+    break; 
+    default: 
+    console.log("Hello World");
 }
