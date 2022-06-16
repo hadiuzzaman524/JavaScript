@@ -159,3 +159,47 @@ class Person extends Human{
 
  const eee= new EEE(); 
  eee.myDepartment();
+
+ // Spred & rest operator
+ //1. spred
+
+ let arr=[1,2,3]; 
+ let newar= [...arr, 4]; // ... copy all element form arr
+ console.log(newar);
+
+ const obj1={
+    name: "Hadiuzzaman",
+ }
+ const obj2={
+    ...obj1, 
+    age: 23
+ }
+
+ console.log(obj2);
+
+ //2. rest
+// Not work
+/*
+ const myFunction= (...args)=>{ // ...args takes multiple argument
+return args.myFunction(e => e === 1);
+ }
+*/
+ //console.log(myFunction(2,3,4,5,1));
+
+ // Destructing 
+ const temp= [1,2,3]; 
+ [temp1,, temp2]=temp; 
+ console.log(temp1, temp2); 
+
+ // refrencing
+ const myname="hadi"; 
+ const myname2=myname; 
+
+
+ console.log(myname);
+
+ // arrat mapping
+
+ newtemp= temp.map((num) =>  num*2);
+ console.log(temp); 
+ console.log(newtemp);
