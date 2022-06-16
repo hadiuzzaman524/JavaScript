@@ -117,3 +117,45 @@ console.log(multiply(2,3));
 
 let multiply2 = (num1, num2) => num1*num2;
 console.log(multiply2(3,3));
+
+//2861966f8b-5995afed57-rdie9m Currency API
+
+// Learn about Class
+class Human{
+    constructor(){
+        this.gender= "Male";
+    }
+    printGender(){
+        console.log(this.gender);
+    }
+}
+
+class Person extends Human{
+    constructor(){
+        super();
+        this.name="Hadiuzzaman"
+    }
+
+     printInformation() {
+        console.log(this.name);
+    }
+}
+ const person= new Person();
+ person.printInformation();
+ person.printGender();
+
+ // Next generation js syntax
+
+ class University{
+    department="CSE";
+
+    myDepartment = ()=> console.log(this.department);
+ }
+
+ class EEE extends University{
+    department= "EEE";
+    myDepartment= ()=> console.log(this.department);
+ }
+
+ const eee= new EEE(); 
+ eee.myDepartment();
